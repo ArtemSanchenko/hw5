@@ -40,14 +40,21 @@ img {
   margin-bottom: 10px;
   color: #fff;
 }
+.submenu-link:hover,
+.submenu-link:focus {
+ transition-duration: 500ms;
+color: orange;
+}
 .submenu-link::before {
   padding: 10px 10px 10px 10px;
-
   background-color: orange;
 }
 .nav-link-menu:hover + .submenu,
 .submenu:hover {
   display: block;
+}
+.nav-link-menu:focus {
+visibility: hidden;
 }
 .nav-link-menu {
   height: 100vh;
