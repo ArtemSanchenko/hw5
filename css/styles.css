@@ -27,10 +27,12 @@ img {
 .submenu {
   background-color: rgb(107, 102, 121);
   padding: 10px;
-  display: none;
+  transform: translateX(-100%);
   position: absolute;
   min-width: 200px;
-  min-height: 710px;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
 }
 .nav-item {
   position: relative;
@@ -72,4 +74,12 @@ visibility: hidden;
   left: 0;
   justify-content: center;
   flex-direction: column;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 102, 121);
 }
