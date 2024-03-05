@@ -76,6 +76,7 @@ visibility: hidden;
   flex-direction: column;
 }
 .container {
+  position: absolute;
   display: flex;
   height: 100vh;
   width: 50px;
