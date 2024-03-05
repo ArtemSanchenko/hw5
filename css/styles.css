@@ -34,10 +34,7 @@ img {
   top: 0;
   left: 0;
 }
-.nav-item {
-  position: relative;
-  text-transform: uppercase;
-}
+
 .submenu-link {
   margin-bottom: 10px;
   color: #fff;
@@ -58,23 +55,12 @@ color: orange;
 .nav-link-menu:focus {
 visibility: hidden;
 }
-.nav-link-menu {
-  height: 100vh;
-}
-.list-nav {
-  background-color: rgb(107, 102, 121);
-  text-transform: uppercase;
-}
 .nav-link {
   transform: rotate(90deg);
   color: #fff;
+  flex-shrink: 0;
 }
-.list-nav {
-  display: flex;
-  left: 0;
-  justify-content: center;
-  flex-direction: column;
-}
+
 .container {
   position: absolute;
   display: flex;
