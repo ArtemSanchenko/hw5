@@ -44,14 +44,15 @@ img {
  transition-duration: 500ms;
 color: orange;
 }
-.submenu-link::before {
-  display: block;
+.submenu-item::before {
 	content: ' ';
   width: 10px;
 	height: 10px;
 	background: orange;
   transform: translate(0, -50%) scaleY(1.5) rotate(45deg);
   border: solid black 2px;
+  display: inline-block;
+  margin-top: 30px;
 }
 .nav-link-menu:hover + .submenu,
 .submenu:hover {
