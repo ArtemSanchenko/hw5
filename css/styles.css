@@ -45,12 +45,22 @@ img {
 color: orange;
 }
 .submenu-link::before {
-  padding: 10px 10px 10px 10px;
-  background-color: orange;
+  display: block;
+	content: ' ';
+  width: 10px;
+	height: 10px;
+	background: orange;
+  transform: translate(0, -50%) scaleY(1.5) rotate(45deg);
+  border: solid black 2px;
 }
 .nav-link-menu:hover + .submenu,
 .submenu:hover {
   display: block;
+}
+.container:hover +.submenu,
+.submenu:hover {
+  transform: none;
+  transition-duration: 1000ms;
 }
 .nav-link-menu:focus {
 visibility: hidden;
@@ -60,7 +70,6 @@ visibility: hidden;
   color: #fff;
   flex-shrink: 0;
 }
-
 .container {
   position: absolute;
   display: flex;
